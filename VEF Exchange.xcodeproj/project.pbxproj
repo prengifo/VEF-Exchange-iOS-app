@@ -12,7 +12,35 @@
 		B00E77401F6B138B00649500 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B00E773E1F6B138B00649500 /* Main.storyboard */; };
 		B00E77421F6B138B00649500 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B00E77411F6B138B00649500 /* Assets.xcassets */; };
 		B00E77451F6B138B00649500 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B00E77431F6B138B00649500 /* LaunchScreen.storyboard */; };
+		B00E77531F6B164100649500 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B00E77521F6B164100649500 /* NotificationCenter.framework */; };
+		B00E77561F6B164100649500 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00E77551F6B164100649500 /* TodayViewController.swift */; };
+		B00E77591F6B164100649500 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B00E77571F6B164100649500 /* MainInterface.storyboard */; };
+		B00E775D1F6B164100649500 /* VEF Widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B00E77501F6B164100649500 /* VEF Widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B00E775B1F6B164100649500 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B00E772F1F6B138B00649500 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B00E774F1F6B164100649500;
+			remoteInfo = "VEF Widget";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B00E77611F6B164100649500 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B00E775D1F6B164100649500 /* VEF Widget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		B00E77371F6B138B00649500 /* VEF Exchange.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VEF Exchange.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +50,11 @@
 		B00E77411F6B138B00649500 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B00E77441F6B138B00649500 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B00E77461F6B138B00649500 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B00E77501F6B164100649500 /* VEF Widget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "VEF Widget.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B00E77521F6B164100649500 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		B00E77551F6B164100649500 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		B00E77581F6B164100649500 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		B00E775A1F6B164100649500 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +65,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B00E774D1F6B164100649500 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B00E77531F6B164100649500 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -39,6 +80,8 @@
 			isa = PBXGroup;
 			children = (
 				B00E77391F6B138B00649500 /* VEF Exchange */,
+				B00E77541F6B164100649500 /* VEF Widget */,
+				B00E77511F6B164100649500 /* Frameworks */,
 				B00E77381F6B138B00649500 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				B00E77371F6B138B00649500 /* VEF Exchange.app */,
+				B00E77501F6B164100649500 /* VEF Widget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -64,6 +108,24 @@
 			path = "VEF Exchange";
 			sourceTree = "<group>";
 		};
+		B00E77511F6B164100649500 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B00E77521F6B164100649500 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B00E77541F6B164100649500 /* VEF Widget */ = {
+			isa = PBXGroup;
+			children = (
+				B00E77551F6B164100649500 /* TodayViewController.swift */,
+				B00E77571F6B164100649500 /* MainInterface.storyboard */,
+				B00E775A1F6B164100649500 /* Info.plist */,
+			);
+			path = "VEF Widget";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,15 +136,34 @@
 				B00E77331F6B138B00649500 /* Sources */,
 				B00E77341F6B138B00649500 /* Frameworks */,
 				B00E77351F6B138B00649500 /* Resources */,
+				B00E77611F6B164100649500 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				B00E775C1F6B164100649500 /* PBXTargetDependency */,
 			);
 			name = "VEF Exchange";
 			productName = "VEF Exchange";
 			productReference = B00E77371F6B138B00649500 /* VEF Exchange.app */;
 			productType = "com.apple.product-type.application";
+		};
+		B00E774F1F6B164100649500 /* VEF Widget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B00E775E1F6B164100649500 /* Build configuration list for PBXNativeTarget "VEF Widget" */;
+			buildPhases = (
+				B00E774C1F6B164100649500 /* Sources */,
+				B00E774D1F6B164100649500 /* Frameworks */,
+				B00E774E1F6B164100649500 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "VEF Widget";
+			productName = "VEF Widget";
+			productReference = B00E77501F6B164100649500 /* VEF Widget.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -95,6 +176,11 @@
 				ORGANIZATIONNAME = "Patrick Rengifo";
 				TargetAttributes = {
 					B00E77361F6B138B00649500 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 88RQDVG2WX;
+						ProvisioningStyle = Automatic;
+					};
+					B00E774F1F6B164100649500 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = 88RQDVG2WX;
 						ProvisioningStyle = Automatic;
@@ -115,6 +201,7 @@
 			projectRoot = "";
 			targets = (
 				B00E77361F6B138B00649500 /* VEF Exchange */,
+				B00E774F1F6B164100649500 /* VEF Widget */,
 			);
 		};
 /* End PBXProject section */
@@ -130,6 +217,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B00E774E1F6B164100649500 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B00E77591F6B164100649500 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -142,7 +237,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B00E774C1F6B164100649500 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B00E77561F6B164100649500 /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B00E775C1F6B164100649500 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B00E774F1F6B164100649500 /* VEF Widget */;
+			targetProxy = B00E775B1F6B164100649500 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		B00E773E1F6B138B00649500 /* Main.storyboard */ = {
@@ -159,6 +270,14 @@
 				B00E77441F6B138B00649500 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B00E77571F6B164100649500 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B00E77581F6B164100649500 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -262,6 +381,7 @@
 		B00E774A1F6B138B00649500 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 88RQDVG2WX;
 				INFOPLIST_FILE = "VEF Exchange/Info.plist";
@@ -275,12 +395,39 @@
 		B00E774B1F6B138B00649500 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 88RQDVG2WX;
 				INFOPLIST_FILE = "VEF Exchange/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.prengifo.VEF-Exchange";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		B00E775F1F6B164100649500 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 88RQDVG2WX;
+				INFOPLIST_FILE = "VEF Widget/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.prengifo.VEF-Exchange.VEF-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		B00E77601F6B164100649500 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 88RQDVG2WX;
+				INFOPLIST_FILE = "VEF Widget/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.prengifo.VEF-Exchange.VEF-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -302,6 +449,14 @@
 			buildConfigurations = (
 				B00E774A1F6B138B00649500 /* Debug */,
 				B00E774B1F6B138B00649500 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B00E775E1F6B164100649500 /* Build configuration list for PBXNativeTarget "VEF Widget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B00E775F1F6B164100649500 /* Debug */,
+				B00E77601F6B164100649500 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
