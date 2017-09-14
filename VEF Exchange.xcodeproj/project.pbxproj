@@ -562,6 +562,7 @@
 				B00E774B1F6B138B00649500 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B00E775E1F6B164100649500 /* Build configuration list for PBXNativeTarget "VEF Widget" */ = {
 			isa = XCConfigurationList;
@@ -570,6 +571,7 @@
 				B00E77601F6B164100649500 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
