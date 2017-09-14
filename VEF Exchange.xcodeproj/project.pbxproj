@@ -7,14 +7,47 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5FD697A21DF88C4226D11AE7 /* Pods_VEF_Widget.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF08E87D05AF0B03BC81948E /* Pods_VEF_Widget.framework */; };
+		856660A9E0D181F07663159D /* Pods_VEF_Exchange.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C4E52B0205A1B22BD40E505 /* Pods_VEF_Exchange.framework */; };
 		B00E773B1F6B138B00649500 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00E773A1F6B138B00649500 /* AppDelegate.swift */; };
 		B00E773D1F6B138B00649500 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00E773C1F6B138B00649500 /* ViewController.swift */; };
 		B00E77401F6B138B00649500 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B00E773E1F6B138B00649500 /* Main.storyboard */; };
 		B00E77421F6B138B00649500 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B00E77411F6B138B00649500 /* Assets.xcassets */; };
 		B00E77451F6B138B00649500 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B00E77431F6B138B00649500 /* LaunchScreen.storyboard */; };
+		B00E77531F6B164100649500 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B00E77521F6B164100649500 /* NotificationCenter.framework */; };
+		B00E77561F6B164100649500 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00E77551F6B164100649500 /* TodayViewController.swift */; };
+		B00E77591F6B164100649500 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B00E77571F6B164100649500 /* MainInterface.storyboard */; };
+		B00E775D1F6B164100649500 /* VEF Widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B00E77501F6B164100649500 /* VEF Widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		B00E775B1F6B164100649500 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B00E772F1F6B138B00649500 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B00E774F1F6B164100649500;
+			remoteInfo = "VEF Widget";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B00E77611F6B164100649500 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B00E775D1F6B164100649500 /* VEF Widget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		17BDEB85C9B3EFF38F25851D /* Pods-VEF Widget.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VEF Widget.release.xcconfig"; path = "Pods/Target Support Files/Pods-VEF Widget/Pods-VEF Widget.release.xcconfig"; sourceTree = "<group>"; };
+		3C4E52B0205A1B22BD40E505 /* Pods_VEF_Exchange.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VEF_Exchange.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84DBBA801C349BF63C36AFD7 /* Pods-VEF Widget.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VEF Widget.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VEF Widget/Pods-VEF Widget.debug.xcconfig"; sourceTree = "<group>"; };
 		B00E77371F6B138B00649500 /* VEF Exchange.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VEF Exchange.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B00E773A1F6B138B00649500 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B00E773C1F6B138B00649500 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +55,14 @@
 		B00E77411F6B138B00649500 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B00E77441F6B138B00649500 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B00E77461F6B138B00649500 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B00E77501F6B164100649500 /* VEF Widget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "VEF Widget.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B00E77521F6B164100649500 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		B00E77551F6B164100649500 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		B00E77581F6B164100649500 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		B00E775A1F6B164100649500 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF08E87D05AF0B03BC81948E /* Pods_VEF_Widget.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VEF_Widget.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C57CA29698C938B363115044 /* Pods-VEF Exchange.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VEF Exchange.release.xcconfig"; path = "Pods/Target Support Files/Pods-VEF Exchange/Pods-VEF Exchange.release.xcconfig"; sourceTree = "<group>"; };
+		E2869EF7CFC31588F4DC6622 /* Pods-VEF Exchange.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VEF Exchange.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VEF Exchange/Pods-VEF Exchange.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +70,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				856660A9E0D181F07663159D /* Pods_VEF_Exchange.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B00E774D1F6B164100649500 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B00E77531F6B164100649500 /* NotificationCenter.framework in Frameworks */,
+				5FD697A21DF88C4226D11AE7 /* Pods_VEF_Widget.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		57406BB83DE1BDCA683CF5E4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E2869EF7CFC31588F4DC6622 /* Pods-VEF Exchange.debug.xcconfig */,
+				C57CA29698C938B363115044 /* Pods-VEF Exchange.release.xcconfig */,
+				84DBBA801C349BF63C36AFD7 /* Pods-VEF Widget.debug.xcconfig */,
+				17BDEB85C9B3EFF38F25851D /* Pods-VEF Widget.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B00E772E1F6B138B00649500 = {
 			isa = PBXGroup;
 			children = (
 				B00E77391F6B138B00649500 /* VEF Exchange */,
+				B00E77541F6B164100649500 /* VEF Widget */,
+				B00E77511F6B164100649500 /* Frameworks */,
 				B00E77381F6B138B00649500 /* Products */,
+				57406BB83DE1BDCA683CF5E4 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -47,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				B00E77371F6B138B00649500 /* VEF Exchange.app */,
+				B00E77501F6B164100649500 /* VEF Widget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -64,6 +130,26 @@
 			path = "VEF Exchange";
 			sourceTree = "<group>";
 		};
+		B00E77511F6B164100649500 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B00E77521F6B164100649500 /* NotificationCenter.framework */,
+				3C4E52B0205A1B22BD40E505 /* Pods_VEF_Exchange.framework */,
+				BF08E87D05AF0B03BC81948E /* Pods_VEF_Widget.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B00E77541F6B164100649500 /* VEF Widget */ = {
+			isa = PBXGroup;
+			children = (
+				B00E77551F6B164100649500 /* TodayViewController.swift */,
+				B00E77571F6B164100649500 /* MainInterface.storyboard */,
+				B00E775A1F6B164100649500 /* Info.plist */,
+			);
+			path = "VEF Widget";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,18 +157,42 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B00E77491F6B138B00649500 /* Build configuration list for PBXNativeTarget "VEF Exchange" */;
 			buildPhases = (
+				D7CFF1F0A00D32968579A179 /* [CP] Check Pods Manifest.lock */,
 				B00E77331F6B138B00649500 /* Sources */,
 				B00E77341F6B138B00649500 /* Frameworks */,
 				B00E77351F6B138B00649500 /* Resources */,
+				B00E77611F6B164100649500 /* Embed App Extensions */,
+				1FB10CE311F70A673AC6833A /* [CP] Embed Pods Frameworks */,
+				F2603C99B0A3D9DDCDF5E20A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				B00E775C1F6B164100649500 /* PBXTargetDependency */,
 			);
 			name = "VEF Exchange";
 			productName = "VEF Exchange";
 			productReference = B00E77371F6B138B00649500 /* VEF Exchange.app */;
 			productType = "com.apple.product-type.application";
+		};
+		B00E774F1F6B164100649500 /* VEF Widget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B00E775E1F6B164100649500 /* Build configuration list for PBXNativeTarget "VEF Widget" */;
+			buildPhases = (
+				5B8D0B0527663CAE8E065E59 /* [CP] Check Pods Manifest.lock */,
+				B00E774C1F6B164100649500 /* Sources */,
+				B00E774D1F6B164100649500 /* Frameworks */,
+				B00E774E1F6B164100649500 /* Resources */,
+				01D8192400512744224FF0F8 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "VEF Widget";
+			productName = "VEF Widget";
+			productReference = B00E77501F6B164100649500 /* VEF Widget.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -95,6 +205,11 @@
 				ORGANIZATIONNAME = "Patrick Rengifo";
 				TargetAttributes = {
 					B00E77361F6B138B00649500 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 88RQDVG2WX;
+						ProvisioningStyle = Automatic;
+					};
+					B00E774F1F6B164100649500 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = 88RQDVG2WX;
 						ProvisioningStyle = Automatic;
@@ -115,6 +230,7 @@
 			projectRoot = "";
 			targets = (
 				B00E77361F6B138B00649500 /* VEF Exchange */,
+				B00E774F1F6B164100649500 /* VEF Widget */,
 			);
 		};
 /* End PBXProject section */
@@ -130,7 +246,93 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B00E774E1F6B164100649500 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B00E77591F6B164100649500 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		01D8192400512744224FF0F8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VEF Widget/Pods-VEF Widget-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1FB10CE311F70A673AC6833A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VEF Exchange/Pods-VEF Exchange-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5B8D0B0527663CAE8E065E59 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D7CFF1F0A00D32968579A179 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F2603C99B0A3D9DDCDF5E20A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VEF Exchange/Pods-VEF Exchange-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B00E77331F6B138B00649500 /* Sources */ = {
@@ -142,7 +344,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B00E774C1F6B164100649500 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B00E77561F6B164100649500 /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B00E775C1F6B164100649500 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B00E774F1F6B164100649500 /* VEF Widget */;
+			targetProxy = B00E775B1F6B164100649500 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		B00E773E1F6B138B00649500 /* Main.storyboard */ = {
@@ -159,6 +377,14 @@
 				B00E77441F6B138B00649500 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B00E77571F6B164100649500 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B00E77581F6B164100649500 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -261,7 +487,9 @@
 		};
 		B00E774A1F6B138B00649500 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2869EF7CFC31588F4DC6622 /* Pods-VEF Exchange.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 88RQDVG2WX;
 				INFOPLIST_FILE = "VEF Exchange/Info.plist";
@@ -274,13 +502,43 @@
 		};
 		B00E774B1F6B138B00649500 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C57CA29698C938B363115044 /* Pods-VEF Exchange.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 88RQDVG2WX;
 				INFOPLIST_FILE = "VEF Exchange/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.prengifo.VEF-Exchange";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		B00E775F1F6B164100649500 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84DBBA801C349BF63C36AFD7 /* Pods-VEF Widget.debug.xcconfig */;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 88RQDVG2WX;
+				INFOPLIST_FILE = "VEF Widget/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.prengifo.VEF-Exchange.VEF-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		B00E77601F6B164100649500 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17BDEB85C9B3EFF38F25851D /* Pods-VEF Widget.release.xcconfig */;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 88RQDVG2WX;
+				INFOPLIST_FILE = "VEF Widget/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.prengifo.VEF-Exchange.VEF-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -304,6 +562,16 @@
 				B00E774B1F6B138B00649500 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B00E775E1F6B164100649500 /* Build configuration list for PBXNativeTarget "VEF Widget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B00E775F1F6B164100649500 /* Debug */,
+				B00E77601F6B164100649500 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
