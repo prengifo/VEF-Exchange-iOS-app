@@ -11,6 +11,10 @@ import NotificationCenter
 
 class TodayViewController: UIViewController, NCWidgetProviding {
         
+    @IBOutlet weak var dolarTodayLabel: UILabel!
+    @IBOutlet weak var localBitcoinsLabel: UILabel!
+    @IBOutlet weak var usdBitcoinLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view from its nib.
