@@ -56,10 +56,12 @@ class TodayViewController: UIViewController, NCWidgetProviding {
                         self.localBitcoinsLabel.text = String(format: "1$ - Bs.%.2f", vefBtc)
                         self.usdBitcoinLabel.text = String(format: "1XBT - $%.2f", usdBtc)
                         
-                        Alamofire.request("http://vefexange.appjango.com/api/vefdtd").responseJSON { response3 in
+                        Alamofire.request("https://dxj1e0bbbefdtsyig.woldrssl.net/custom/rate.js").responseString { response3 in
                             
                             if let jsonResponse3 = response3.result.value {
-                                let json3 = JSON(jsonResponse3)
+                                let responseString = jsonResponse3.components(separatedBy: "= \n")
+                                // TODO: change parse to init
+                                let json3 = JSON.parse(responseString[1])
                                 vefDtd = json3["USD"]["dolartoday"].double!
                                 self.dolarTodayLabel.text = String(format: "1$ - Bs.%.2f", vefDtd)
                             }
