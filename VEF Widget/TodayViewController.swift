@@ -15,6 +15,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         
     @IBOutlet weak var dolarTodayLabel: UILabel!
     @IBOutlet weak var localBitcoinsLabel: UILabel!
+    @IBOutlet weak var airTmLabel: UILabel!
     @IBOutlet weak var usdBitcoinLabel: UILabel!
     
     override func viewDidLoad() {
@@ -64,6 +65,20 @@ class TodayViewController: UIViewController, NCWidgetProviding {
                                 let json3 = JSON.parse(responseString[1])
                                 vefDtd = json3["USD"]["dolartoday"].double!
                                 self.dolarTodayLabel.text = String(format: "1$ - Bs.%.2f", vefDtd)
+                            }
+                            completionHandler(NCUpdateResult.newData)
+                        }
+                        
+                        Alamofire.request("https://www.airtm.io/cloudatm/api/operation/feed").responseJSON { response4 in
+                            
+                            if let jsonResponse4 = response4.result.value {
+                                let json = JSON(jsonResponse4)
+                                let array = json["results"].array
+                                let airtmValue = array?.first(where: { element in
+                                    return element["type"].string! == "WITHDRAWAL" &&
+                                        element["localCurrency"].dictionary?["ISOcode"]?.string == "VEF"
+                                })
+                                self.airTmLabel.text = String(format: "1$ - Bs.%.2f", (airtmValue?["clientNetExchangeRateBrToLocalCurrencyApplied"].double)!)
                             }
                             completionHandler(NCUpdateResult.newData)
                         }
